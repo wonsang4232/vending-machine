@@ -87,6 +87,9 @@ void Widget::on_Buy_a_Milk_clicked()
 void Widget::on_RESET_clicked()
 {
     int Charges = ui->lcdNumber->intValue();
+
+    AddMoney(-Charges);
+
     int C500, C100, C50, C10;
 
     C500 = Charges / 500;
